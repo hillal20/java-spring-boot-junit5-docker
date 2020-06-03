@@ -91,7 +91,15 @@
         <artifactId>compiler</artifactId>
         <version>19.1.1</version>
     </dependency>
-</dependencies>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <plugins>
@@ -100,6 +108,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>APPLICATION_JAR</finalName>
     </build>
 
 </project>
